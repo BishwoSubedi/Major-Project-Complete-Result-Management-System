@@ -1,0 +1,41 @@
+<%- include('../Includes/begin.ejs') %>
+    <%- include('../Includes/staff_nav.ejs') %>
+        <link rel="stylesheet" href="../CSS/admin-dashboard.css">
+
+        <section id="content-wrapper"  s class="d-flex  justify-content-center align-items-center">
+            <main role="main" class="mt-2 main">
+                <div class="header pb-2 pb-sm-6 pt-8 pt-lg-2 d-flex align-items-center"
+                    style="max-height: 100px;  background-size: cover; background-position: center top;">
+                    <h1>Hello <%= user.st_name %>
+                    </h1>
+                </div>
+
+                <hr>
+
+
+
+                <div class="col-sm-8">
+                    <div class="card mb-4" style="box-shadow: 0 1rem 2rem 0 rgba(136, 152, 170, .15) !important;">
+                        <img height="250" class="card-img-top"
+                            src="http://1.bp.blogspot.com/-nzm908Pfunw/VqXgeRNp4LI/AAAAAAAACJI/wgeVntLSIT8/w1200-h630-p-k-no-nu/status-report.png"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Result</h5>
+                            <p class="card-text">Manage your student's report here (gpa). All
+                                your
+                                changes will be reflected to them as well.
+                            </p>
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-wrapper text-center d-flex justify-content-between" style="color: #fff;">
+                                <a href="/staff/getresult" class="btn btn-primary">Student Result</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </section>
+
+        <%- include('../Includes/staff_end.ejs') %>
